@@ -1693,6 +1693,19 @@ tBTM_STATUS BTM_BleBroadcast(BOOLEAN start, tBTM_START_STOP_ADV_CMPL_CBACK *p_st
 
 /*******************************************************************************
 **
+** Function         BTM_BleBroadcastCheck
+**
+** Description      This function is to check if adv can be stopped successfully
+**
+** Parameters       start: start or stop broadcasting.
+**
+** Returns          status.
+**
+*******************************************************************************/
+tBTM_STATUS BTM_BleBroadcastCheck(BOOLEAN start, tBTM_START_STOP_ADV_CMPL_CBACK  *p_stop_adv_cback);
+
+/*******************************************************************************
+**
 ** Function         BTM_BleConfigPrivacy
 **
 ** Description      This function is called to enable or disable the privacy in
